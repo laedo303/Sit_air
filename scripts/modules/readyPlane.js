@@ -1,4 +1,6 @@
 import getFormPerson from "./formPerson.js";
+import airplane from "./airplane.js";
+
 
 const readyPlane = (forms, main) => {
   const data = [];
@@ -19,15 +21,9 @@ const readyPlane = (forms, main) => {
       if (forms.length === data.length) {
         forms.forEach(form => form.remove());
         airplane(main, data);
-      }
-
-
+      };
     })
-
   });
-
-  console.log(data);
-
 };
 
 export default readyPlane;

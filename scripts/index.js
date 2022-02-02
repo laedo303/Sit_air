@@ -16,7 +16,7 @@ const init = (selectorApp, title) => {
 
     main.append(...forms);
 
-    readyPlane(form, main)
+    readyPlane(forms, main);
   })
 };
 
