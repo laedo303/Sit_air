@@ -56,7 +56,7 @@ const createBlockSeat = (n, count) => {
       return seat;
     });
 
-    seats.append(seatsRow);
+    seats.append(...seatsRow);
     wrapperRow.append(seats);
     fuselage.append(wrapperRow);
   };
@@ -87,7 +87,7 @@ const createAirplane = (title, scheme) => {
     };
   });
 
-  plane.append(cockpit, [...elements]);
+  plane.append(cockpit, ...elements);
   choisesSeat.append(plane);
   return choisesSeat;
 };
