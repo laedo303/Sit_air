@@ -2,7 +2,6 @@ import { setStorage, getStorage } from "../service/storage.js";
 import createElement from "./createElement.js";
 import declOfNum from "./declOfNum.js";
 
-
 const createCockpit = (titleText) => {
   const cockpit = createElement('div', {
     className: 'cockpit',
