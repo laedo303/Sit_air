@@ -1,6 +1,5 @@
 import createElement from "./createElement.js";
 
-
 const createTitle = (title) => {
   const h1 = createElement('h1', {
     className: 'title',
