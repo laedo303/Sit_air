@@ -1,6 +1,6 @@
 export const getStorage = (id) => {
   if (localStorage.getItem(`tour-${id}`)) {
-    return JSON.parse(localStorage.getItem('tour'))
+    return JSON.parse(localStorage.getItem(`tour-${id}`))
   } else {
     return [];
   }
